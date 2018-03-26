@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, Validators, FormControl } from '@angular/forms';
-import { toBase64String } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
