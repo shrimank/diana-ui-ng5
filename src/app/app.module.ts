@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AwsSignature } from './aws/aws-signature';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [AwsSignature],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

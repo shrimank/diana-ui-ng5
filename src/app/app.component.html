@@ -14,8 +14,8 @@
               <input matInput placeholder="Ask Diana..."
               formControlName="query">
             </mat-form-field>
-            <button type="button" mat-raised-button color="primary" (click)="sendAlexa()"  [disabled]="!this.queryForm.valid">Alexa</button>
-            <button type="button" mat-raised-button color="warn" (click)="sendDialogFlow()" [disabled]="!this.queryForm.valid">API.AI</button>
+            <!-- <button type="button" mat-raised-button color="primary" (click)="sendAlexa()"  [disabled]="!this.queryForm.valid">Alexa</button> -->
+            <button type="button" mat-raised-button color="warn" (click)="sendDialogFlow();sendAlexa()" [disabled]="!this.queryForm.valid">Send</button>
           </form>
       <div>
         <mat-form-field class="full-width">
@@ -25,7 +25,7 @@
       </div>
       <div>
         <mat-form-field class="full-width">
-          <textarea class="requestDiv" matInput disabled="disabled" placeholder="Alexa Request"
+          <textarea class="requestDiv" matInput disabled="disabled"
           [value]="request.alexa"
           ></textarea>
         </mat-form-field>
